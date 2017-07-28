@@ -1,0 +1,7 @@
+web01:
+  image: "nginx:latest"
+  ports:
+    - "8080:80"
+  volumes:
+    - ./webhost.conf:/etc/nginx/sites-enabled/webhost.conf
+    - ./www.lab.local:/srv/www
